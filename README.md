@@ -64,5 +64,5 @@ Every version of macOS that is included with BackToMac is patched to work both o
 BackToMac was made possible thanks to the following technologies and people :
 - [**dosdude1**](https://www.dosdude1.com/) - responsible for macOS Patchers.
 - [**FlatLaf**](https://www.formdev.com/flatlaf/) - library responsible for the look and feel.
-- [**Apache Commons IO**](https://commons.apache.org/proper/commons-io/) - library responsible for downloading files.
-- Special thanks to the [**macOS on Unsupported Macs community**](https://discord.gg/XbbWAsE).
+- [**Apache Commons IO**](https://commons.apache.org/proper/commons-io/) - library responsible for downloading files and status.
+- Special thanks to the [**Unsupported Macs**](https://discord.gg/XbbWAsE) community.
