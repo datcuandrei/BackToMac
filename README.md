@@ -3,7 +3,7 @@ An automated utility for Linux that creates bootable macOS USB sticks.
 <img src="https://raw.githubusercontent.com/datcuandrei/BackToMac/master/captures/default.png" width="700" height="391">
 <img src="https://raw.githubusercontent.com/datcuandrei/BackToMac/master/captures/dark.png" width="700" height="391">
 
-See [captures](https://github.com/datcuandrei/BackToMac/tree/master/captures) for more images.
+See [captures](https://github.com/datcuandrei/BackToMac/tree/master/captures) for more images.Please note that *captures* doesn't contain all the images of the program.It only includes the important ones.You will encounter other GUI elements as you use it(errors,cancel,notifications,etc.)
 
 ## LICENSE
 This project is licensed under the Apache 2.0 license. View LICENSE.md to learn more.
