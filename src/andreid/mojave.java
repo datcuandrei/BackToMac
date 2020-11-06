@@ -1,15 +1,22 @@
 /*
-    BackToMac
-
-	Module name :
-		mojave.java
-
-	Abstract :
-		This class is responsible for downloading and flashing macOS Mojave with dosdude1's patcher included.
-
-	Author :
-		Andrei Datcu (datcuandrei) 17-September-2020 (last updated : 21-September-2020).
-*/
+ * mojave.java
+ *
+ * Copyright 2020 Andrei Datcu <@datcuandrei>
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *    http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ *
+ *
+ */
 package andreid;
 
 import javax.swing.*;
@@ -39,7 +46,7 @@ public class mojave {
         JTextPane text = new JTextPane();
         JScrollPane scrollPane = new JScrollPane(text);
         text.setContentType("text/html");
-        text.setText("<html><head></head><body><div align=\"center\"><p>• If you haven't inserted your USB drive,it would be a good time to do so.</p><p>• Format the USB drive.(disk,not partitions).<br/>BackToMac will automatically change the file system to the one required.(HFS+)</p><p>• BackToMac will start downloading the version of macOS you have requested after you hit the \"Proceed\" button.</p><p>The OS will be patched to work both on officially supported Macs and unsupported Macs,thanks to <b>dosdude1</b>(See \"Attribution\" for more info.)</p><p>• After the download has been finished,BackToMac will show you a list of connected USB devices.</p><p>If you don't know which one is your USB <b>disk</b>,open a new terminal window and use <b>lsblk</b>.</p><img alt=\"Drive label example\" src=\"https://raw.githubusercontent.com/datcuandrei/BackToMac/master/resources/lsblk.jpg\"><p>As you can see,in my case <b>sdc</b> is the label of my USB drive.Note that the label is <b>disk</b> and not the <b>part</b>.</p><p>• The process will take a a long time,so let the program run.It will let you know when it is done.</p><p>• BackToMac will safely unmount your drive and ask you if you want to delete the OS image after the process is done.</p></div></body></html>");
+        text.setText("<html><head></head><body><div align=\"center\"><p>• BackToMac will give the best results if ran natively(either installed on your system,or through a live distro).<br/>Running the program through a VM will most likely result in a non-working USB installation.</p><p>• If you haven't inserted your USB drive,it would be a good time to do so.</p><p>• Format the USB drive.I recommended you format it as NTFS with the partition table set as GPT.<br/>BackToMac will automatically change the file system to the one required once the flashing process begins.(HFS+)</p><p>• BackToMac will start downloading the version of macOS you have requested after you hit the \"Proceed\" button.</p><p>The OS will be patched to work both on officially supported Macs and unsupported Macs,thanks to <b>dosdude1</b>(See \"Attribution\" for more info.)</p><p>• After the download has been finished,BackToMac will show you a list of connected USB devices.</p><p>If you don't know which one is your USB <b>disk</b>,open a new terminal window and use <b>lsblk</b>.</p><img alt=\"Drive label example\" src=\"https://raw.githubusercontent.com/datcuandrei/BackToMac/master/resources/lsblk.jpg\"><p>As you can see,in my case <b>sdc</b> is the label of my USB drive.Note that the label is <b>disk</b> and not the <b>part</b>.</p><p>• The process will take a a long time,so let the program run.It will let you know when it is done.</p><p>• BackToMac will safely unmount your drive and ask you if you want to delete the OS image after the process is done.</p></div></body></html>");
         text.setEditable(false);
         scrollPane.setVerticalScrollBarPolicy(JScrollPane.VERTICAL_SCROLLBAR_ALWAYS);
 
@@ -68,7 +75,7 @@ public class mojave {
         mojave.setLocationRelativeTo(null);
         mojave.setLayout(new FlowLayout(FlowLayout.CENTER));
         mojave.setContentPane(new mojave().getIntroduction());
-        mojave.setSize(900,550);
+        mojave.setSize(810,570);
         mojave.setVisible(true);
         mojave.setDefaultCloseOperation(WindowConstants.HIDE_ON_CLOSE);
         return mojave;

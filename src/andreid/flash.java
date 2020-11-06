@@ -1,15 +1,22 @@
 /*
-    BackToMac
-
-	Module name :
-		flash.java
-
-	Abstract :
-		This class is responsible for the flashing process.
-
-	Author :
-		Andrei Datcu (datcuandrei) 28-September-2020 (last updated : 4-October-2020).
-*/
+ * flash.java
+ *
+ * Copyright 2020 Andrei Datcu <@datcuandrei>
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *    http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ *
+ *
+ */
 
 package andreid;
 
@@ -34,7 +41,7 @@ public class flash {
         flashUSB.setLocationRelativeTo(null);
         flashUSB.setVisible(true);
         flashUSB.setLayout(new FlowLayout(FlowLayout.CENTER));
-        flashUSB.setSize(450,250);
+        flashUSB.setSize(430,250);
         JTextPane text1 = new JTextPane();
         text1.setContentType("text/html");
         text1.setText("<html><head></head><body><div align=\"center\"><h1>Let's create the bootable USB!</h1><h3>While the USB will be flashed,please don't let the<br/>computer enter sleep/stand-by mode.</h3><h3>When the flashing process has finished,the program will<br/>close this window and take you to the finish screen!</h3></div></body></html>");

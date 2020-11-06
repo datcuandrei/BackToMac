@@ -1,15 +1,22 @@
 /*
-    BackToMac
-
-	Module name :
-		backtomac.java
-
-	Abstract :
-		This is the main class for the program.
-
-	Copyright :
-		Andrei Datcu (datcuandrei) 8-September-2020 (last updated : 3-October-2020).
-*/
+ * backtomac.java
+ *
+ * Copyright 2020 Andrei Datcu <@datcuandrei>
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *    http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ *
+ *
+ */
 
 package andreid;
 
@@ -85,7 +92,7 @@ public class backtomac {
         authorAndreiDatcuButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent actionEvent) {
-                String root[] = {"/bin/bash","-c","xdg-open https://github.com/datcuandrei/"};
+                String root[] = {"/bin/bash","-c","xdg-open https://datcuandrei.github.io/"};
                 try {
                     Process p = Runtime.getRuntime().exec(root);
                 } catch (IOException e) {
@@ -117,7 +124,7 @@ public class backtomac {
     }
 
     public static void main(String args[]) throws UnsupportedLookAndFeelException, IOException {
-        UIManager.setLookAndFeel( new FlatLightLaf() ); // for dark mode = FlatDarculaLaf ; for light mode = FlatLightLaf.
+        UIManager.setLookAndFeel( new FlatDarculaLaf() ); // for dark mode = FlatDarculaLaf ; for light mode = FlatLightLaf.
         JFrame frame = new JFrame("BackToMac");
         frame.setContentPane(new backtomac().main);
         frame.setVisible(true);
