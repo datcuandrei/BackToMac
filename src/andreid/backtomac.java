@@ -124,7 +124,7 @@ public class backtomac {
     }
 
     public static void main(String args[]) throws UnsupportedLookAndFeelException, IOException {
-        UIManager.setLookAndFeel( new FlatDarculaLaf() ); // for dark mode = FlatDarculaLaf ; for light mode = FlatLightLaf.
+        UIManager.setLookAndFeel( new FlatLightLaf() ); // for dark mode = FlatDarculaLaf ; for light mode = FlatLightLaf.
         JFrame frame = new JFrame("BackToMac");
         frame.setContentPane(new backtomac().main);
         frame.setVisible(true);

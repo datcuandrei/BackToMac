@@ -29,9 +29,11 @@ sudo su <<HERE
 echo "Running BackToMac..."
 
 if [ "$1" = "d" ]; then 
-    java -jar dark.jar
+    java -jar dark.jar &
+  exit 0
 else
-    java -jar light.jar    
+    java -jar light.jar &
+  exit 0   
 fi
 
 HERE
