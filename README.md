@@ -1,6 +1,10 @@
 
 ## Under maintenance.
 Currently,BackToMac is facing some issues related to the OS downloading phase.Those issues will be fixed as soon as possible and an update will be pushed.
+
+## Update
+The issues have been identified and will be solved in the shortest time.
+
 # BackToMac
 An automated utility for Linux that creates bootable macOS USB sticks.
 <img src="https://raw.githubusercontent.com/datcuandrei/BackToMac/master/captures/default.png" width="700" height="391">
