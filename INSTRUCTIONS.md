@@ -10,13 +10,13 @@
 			<p>• Format the USB drive.I recommend you format it as NTFS with the partition table set as GPT.
 				<br>BackToMac will automatically change the file system to the one required once the flashing process begins.(HFS+)
 			</p>
-			<p>• After you hit the \"Proceed\" button,BackToMac will ask you which patcher you want to use.</p>
+			<p>• After you hit the "Proceed" button,BackToMac will ask you which patcher you want to use.</p>
 			<p>The patchers are created for unsupported Macs.
 				<br>If you are on a supported machine,the patcher you choose will not affect the way your Mac works.
 				</p>
 				<p>Special thanks go to 
 					<b>dosdude1</b> and 
-					<b>RMC</b>(See \"Attribution\" for more info.)
+					<b>RMC</b>(See "Attribution" for more info.)
 				</p>
 				<p>• After the download has been finished,BackToMac will show you a list of connected USB devices.</p>
 				<p>If you don't know which one is your USB 
