@@ -47,14 +47,14 @@ public class backtomac {
             public void actionPerformed(ActionEvent actionEvent) {
                 JFrame attribution = new JFrame("Attribution");
                 attribution.setVisible(true);
-                attribution.setSize(550,470);
+                attribution.setSize(550,590);
                 attribution.setDefaultCloseOperation(WindowConstants.HIDE_ON_CLOSE);
                 attribution.setLocationRelativeTo(null);
                 attribution.setLayout(new FlowLayout(FlowLayout.CENTER));
 
                 JTextPane text = new JTextPane();
                 text.setContentType("text/html");
-                text.setText("<html><head></head><body><div align=\"center\"><h1>BackToMac was made possible thanks to the<br>following technologies and people :</h1><p>• <b>dosdude1</b> - responsible for macOS Patchers.</p><p>• <b>FlatLaf</b> - library responsible for the look and feel.</p><p>• <b>Apache Commons IO</b> - library responsible for downloading files and status.</p><p>• Special thanks to the <b>Unsupported Macs</b> community.</p><br><h2>Links :</h2><p><b>dosdude1</b> : https://www.dosdude1.com/</p><p><b>FlatLaf</b> : https://www.formdev.com/flatlaf/</p><p><b>Apache Commons IO</b> : https://commons.apache.org/proper/commons-io/</p><p><b>Unsupported Macs</b> : https://discord.gg/XbbWAsE</p></div></body></html>");
+                text.setText("<html><head></head><body><div align=\"center\"><h1>BackToMac was made possible thanks to the<br>following technologies and people :</h1><p>• <b>dosdude1</b> - responsible for macOS Patchers.</p><p>• <b>RMC Team</b> - responsible for macOS Patchers.</p><p>• <b>FlatLaf</b> - library responsible for the look and feel.</p><p>• <b>Apache Commons IO</b> - library responsible for downloading files and status.</p><p>• Special thanks to the <b>Unsupported Macs</b> community.</p><br><h2>Links :</h2><p><b>dosdude1</b> : https://www.dosdude1.com/</p><p><b>RMC Team</b> : https://rmc-team.github.io/</p><p><b>FlatLaf</b> : https://www.formdev.com/flatlaf/</p><p><b>Apache Commons IO</b> : https://commons.apache.org/proper/commons-io/</p><p><b>Unsupported Macs</b> : https://discord.gg/XbbWAsE</p><br/><p>Copyright 2020 Andrei Datcu.<br>Licensed under the Apache License, Version 2.0</p></div></body></html>");
                 text.setEditable(false);
 
                 attribution.add(text);

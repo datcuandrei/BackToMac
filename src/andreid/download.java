@@ -34,14 +34,16 @@ public class download implements Runnable{
     File output;
     String osName;
     String fileToFlash;
+    String patcherType;
     double OSsize;
 
-    public download(String osURL, File output, String osName, String fileToFlash, double OSsize) {
+    public download(String osURL, File output, String osName, String fileToFlash, double OSsize,String patcherType) {
         this.osURL = osURL;
         this.output = output;
         this.osName = osName;
         this.fileToFlash = fileToFlash;
         this.OSsize = OSsize;
+        this.patcherType = patcherType;
     }
     @Override
     public void run() {
@@ -140,9 +142,19 @@ public class download implements Runnable{
             } catch (IOException ioException) {
                 ioException.printStackTrace();
             }
-            String fetchDownload = readHTML.substring(readHTML.indexOf("http://download"), readHTML.lastIndexOf("\"\n" +
-                    "                        id=\"downloadButton\">"));
-            System.out.println("Download fetched!");
+            String fetchDownload = null;
+            switch (patcherType){
+                case "RMC" :
+                    fetchDownload = readHTML.substring(readHTML.indexOf("https://download"), readHTML.lastIndexOf("\"\n" +
+                            "                        id=\"downloadButton\">"));
+                    System.out.println("Download fetched!");
+                    break;
+                case "dosDude1" :
+                    fetchDownload = readHTML.substring(readHTML.indexOf("http://download"), readHTML.lastIndexOf("\"\n" +
+                            "                        id=\"downloadButton\">"));
+                    System.out.println("Download fetched!");
+                    break;
+            }
 
             // Downloading OS
             String finalOSDownload = fetchDownload;
