@@ -86,10 +86,10 @@ $ chmod +x backtomac.sh
 ```
 After that you can run the app using the commands provided above.
 
-## Issues
+# Issues
 If you find issues while running the app,please report them in the [issues](https://github.com/datcuandrei/BackToMac/issues) section.
 
-## Attribution 
+# Attribution 
 BackToMac was made possible thanks to the following technologies and people :
 - [**dosdude1**](https://www.dosdude1.com/) - responsible for macOS Patchers.
 - [**RMC Team**](https://rmc-team.github.io) - responsible for macOS Patchers.
