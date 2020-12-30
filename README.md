@@ -12,6 +12,7 @@ Table of Contents
 * [Download](#download)
 * [How to use](#how-to-use)
     * [Permission denied](#permission-denied)
+    * [Step by step instructions](#step-by-step-instructions)
 * [Issues](#issues)
 * [Attribution](#attribution)
 
@@ -77,6 +78,9 @@ It can also run under dark mode :
 ```bash
 $ sh backtomac.sh d
 ```
+
+## Step by step instructions
+For step-by-step instructions on how to successfully create a bootable USB,see [INSTRUCTIONS](https://github.com/datcuandrei/BackToMac/blob/master/INSTRUCTIONS.md)
 
 ## Permission denied 
 This error occures when the user does not have enough privileges to access the program.
