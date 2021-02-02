@@ -92,7 +92,8 @@ For step-by-step instructions on how to successfully create a bootable USB,see [
 This error occures when the user does not have enough privileges to access the program.
 In this case,we need to get ownership of the app by typing :
 ```bash
-$ chmod +x backtomac.sh
+$ chmod +x /bin/backtomac
+$ chmod +x /opt/BackToMac/BackToMac.jar
 ```
 After that you can run the app using the commands provided above.
 
