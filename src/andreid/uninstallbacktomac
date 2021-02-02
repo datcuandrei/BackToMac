@@ -1,0 +1,49 @@
+#!/bin/sh
+
+#   Copyright 2020-2021 Andrei Datcu.
+
+#   Licensed under the Apache License, Version 2.0 (the "License");
+#   you may not use this file except in compliance with the License.
+#   You may obtain a copy of the License at
+
+#       http://www.apache.org/licenses/LICENSE-2.0
+
+#   Unless required by applicable law or agreed to in writing, software
+#   distributed under the License is distributed on an "AS IS" BASIS,
+#   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+#   See the License for the specific language governing permissions and
+#   limitations under the License.
+
+VERSIONTAG=v1.2.0
+VER="BackToMac $VERSIONTAG"
+
+SCRIPTPATH="$( cd "$(dirname "$0")" >/dev/null 2>&1 ; pwd -P )"
+
+echo ""
+echo ""
+echo "This script will uninstall BackToMac."
+echo "BackToMac doesn't have any dependencies."
+echo "If this script installs anything else other than BackToMac,it has been"
+echo "modified externally.In that case,do not run it,first check it's source"
+echo "code!"
+echo ""
+echo "Space freed after uninstalling BackToMac :		1.4MiB"
+echo ""
+read -r -p ":: Proceed with removal? [Y/n] " input
+
+case $input in
+    [yY][eE][sS]|[yY])
+	echo "Current path : $SCRIPTPATH"
+	echo ""
+	echo ":: Uninstalling..."
+	echo "(1/1) Removing BackToMac..."
+	rm -rf /bin/backtomac
+	rm -rf /opt/BackToMac
+
+	echo ""
+	echo ":: BackToMac was deleted successfully!"
+	;;
+    *)
+ 	exit 1
+ 	;;
+esac

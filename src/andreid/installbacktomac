@@ -1,0 +1,54 @@
+#!/bin/sh
+
+#   Copyright 2020-2021 Andrei Datcu.
+
+#   Licensed under the Apache License, Version 2.0 (the "License");
+#   you may not use this file except in compliance with the License.
+#   You may obtain a copy of the License at
+
+#       http://www.apache.org/licenses/LICENSE-2.0
+
+#   Unless required by applicable law or agreed to in writing, software
+#   distributed under the License is distributed on an "AS IS" BASIS,
+#   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+#   See the License for the specific language governing permissions and
+#   limitations under the License.
+
+VERSIONTAG=v1.2.0
+VER="BackToMac $VERSIONTAG"
+
+SCRIPTPATH="$( cd "$(dirname "$0")" >/dev/null 2>&1 ; pwd -P )"
+
+echo ""
+echo ""
+echo "This script will install BackToMac."
+echo "BackToMac doesn't have any dependencies."
+echo "If this script installs anything else other than BackToMac,it has been"
+echo "modified externally.In that case,do not run it,first check it's source"
+echo "code!"
+echo ""
+echo "Total installation size :		1.4MiB"
+echo ""
+read -r -p ":: Proceed with installation? [Y/n] " input
+
+case $input in
+    [yY][eE][sS]|[yY])
+	echo "Current path : $SCRIPTPATH"
+	echo ""
+	echo ":: Installing..."
+	echo "(1/3) Creating dir..."
+	mkdir /opt/BackToMac/
+
+	echo "(2/3)Moving jar and executable..."
+	cp -avr $SCRIPTPATH/BackToMac.jar /opt/BackToMac.jar
+	cp -avr $SCRIPTPATH/backtomac /bin/backtomac
+
+	echo "(3/3)Making backtomac executable..."
+	chmod +x /bin/backtomac
+	echo ""
+	echo ":: Setup finished successfully!"
+	;;
+    *)
+ 	exit 1
+ 	;;
+esac
