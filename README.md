@@ -34,6 +34,9 @@ For users that have a supported Mac,their choice won't make a difference,since n
 
 Special thanks go to [**dosdude1**](https://www.dosdude1.com/) and [**RMC Team**](https://rmc-team.github.io).Without their contribution,this feature would not have been possible.
 
+### Custom OS Images
+With the release of version 1.2.0,BackToMac supports custom OS images.Users can now create USB sticks with their own image files.Currently,BackToMac supports only `.iso` and `.cdr` image files.(thanks to @Minh-Ton for the idea.)
+
 > The program is pretty straight forward and easy to use.It only requires a few clicks to get the job done!
 
 # LICENSE
@@ -69,14 +72,16 @@ $ sudo dnf install java-11-openjdk.x86_64
 - After installing Java,download the latest version available in [releases](https://github.com/datcuandrei/BackToMac/releases).
 - Extract it where you want the application to be installed.
 
-# How to use
-- To start the application,open terminal,``cd path/to/extracted/app``,and then run :
+# How to install
+- To install the application,open terminal,``cd path/to/extracted/app``,and then run :
 ```bash
-$ sh backtomac.sh
+$ sudo sh installbacktomac
 ```
-It can also run under dark mode :
+After the installation is done,simply run `backtomac`,or search for it using an application finder.
+
+- To uninstall the application,open terminal,``cd path/to/extracted/app``,and then run :
 ```bash
-$ sh backtomac.sh d
+$ sudo sh uninstallbacktomac
 ```
 
 ## Step by step instructions
