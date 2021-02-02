@@ -40,7 +40,7 @@ case $input in
 	mkdir /opt/BackToMac/
 
 	echo "(2/3)Moving jar and executable..."
-	cp -avr $SCRIPTPATH/BackToMac.jar /opt/BackToMac.jar
+	cp -avr $SCRIPTPATH/BackToMac.jar /opt/BackToMac/BackToMac.jar
 	cp -avr $SCRIPTPATH/backtomac /bin/backtomac
 
 	echo "(3/3)Making backtomac executable..."
