@@ -12,6 +12,7 @@ Table of Contents
 * [Requirements](#requirements)
 * [Download](#download)
 * [How to install](#how-to-install)
+    * [Portable use](#portable-use)
     * [Permission denied](#permission-denied)
     * [Step by step instructions](#step-by-step-instructions)
 * [Issues](#issues)
@@ -81,6 +82,12 @@ $ sudo sh installbacktomac
 After the installation is done,simply run `backtomac`,or search for it using an application finder.
 If the app doesn't launch,use `sudo java -jar /opt/BackToMac/BackToMac.jar` in the terminal instead.
 
+## Portable use
+To use BackToMac without installing it,after extracting it,open terminal and
+```bash
+$ cd path/to/extracted/app
+$ sudo java -jar BackToMac.jar
+```
 - To uninstall the application,open terminal,``cd path/to/extracted/app``,and then run :
 ```bash
 $ sudo sh uninstallbacktomac
@@ -95,6 +102,11 @@ In this case,we need to get ownership of the app by typing :
 ```bash
 $ chmod +x /bin/backtomac
 $ chmod +x /opt/BackToMac/BackToMac.jar
+```
+or if you run BackToMac as portable :
+```bash
+$ cd path/to/extracted/app
+$ chmod +x BackToMac.jar
 ```
 After that you can run the app using the commands provided above.
 
