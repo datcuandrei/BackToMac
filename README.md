@@ -79,18 +79,20 @@ $ sudo dnf install java-11-openjdk.x86_64
 ```bash
 $ sudo sh installbacktomac
 ```
+
 After the installation is done,simply run `backtomac`,or search for it using an application finder.
 If the app doesn't launch,use `sudo java -jar /opt/BackToMac/BackToMac.jar` in the terminal instead.
+
+- To uninstall the application,open terminal,``cd path/to/extracted/app``,and then run :
+```bash
+$ sudo sh uninstallbacktomac
+```
 
 ## Portable use
 To use BackToMac without installing it,after extracting it,open terminal and
 ```bash
 $ cd path/to/extracted/app
 $ sudo java -jar BackToMac.jar
-```
-- To uninstall the application,open terminal,``cd path/to/extracted/app``,and then run :
-```bash
-$ sudo sh uninstallbacktomac
 ```
 
 ## Step by step instructions
