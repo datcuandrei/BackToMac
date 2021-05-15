@@ -110,7 +110,7 @@ public class flash {
                                 System.out.println("File : " + fileToFlash);
 
                                 System.out.println("Flashing in progress...");
-                                String[] flashScript = {"/bin/bash","-c","sudo dd if="+fileToFlash+" of=/dev/"+USB};
+                                String[] flashScript = {"/bin/bash","-c","sudo dd if="+fileToFlash+" of=/dev/"+USB+" bs=4M"};
                                 try {
                                     Process dd = Runtime.getRuntime().exec(flashScript);
                                     dd.waitFor();
