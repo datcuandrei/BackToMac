@@ -37,7 +37,8 @@ For users that have a supported Mac,their choice won't make a difference,since n
 Special thanks go to [**dosdude1**](https://www.dosdude1.com/) and [**RMC Team**](https://rmc-team.github.io).Without their contribution,this feature would not have been possible.
 
 ### Custom OS Images
-With the release of version 1.2.0,BackToMac supports custom OS images.Users can now create USB sticks with their own image files.Currently,BackToMac supports only `.iso` and `.cdr` image files.(thanks to @Minh-Ton for the idea.)
+With the release of version 1.2.0,BackToMac supports flashing custom OS images.Users can now create USB sticks with their own image files.(thanks to @Minh-Ton for the idea.)
+**The program writes the images using `dd`.**
 
 > The program is pretty straight forward and easy to use.It only requires a few clicks to get the job done!
 
