@@ -39,6 +39,7 @@ Special thanks go to [**dosdude1**](https://www.dosdude1.com/) and [**RMC Team**
 
 ### Original macOS Images
 By default, BackToMac automatically uses images that are patched to work on both supported and unsupported Macs. If, however, the user wants to use an original, untouched image of macOS, they can be easily downloaded using the link below:
+
 <br/>
 <b>macOS Catalina</b> : *through app store* <br>
 <b>macOS Mojave</b> : *through app store* <br>
@@ -49,6 +50,7 @@ By default, BackToMac automatically uses images that are patched to work on both
 Not included with BackToMac, but can be flashed with ease : <br>
 <b>OS X El Capitan</b> : http://updates-http.cdn-apple.com/2019/cert/061-41424-20191024-218af9ec-cf50-4516-9011-228c78eda3d2/InstallMacOSX.dmg <br>
 <b>OS X Yosemite</b> : http://updates-http.cdn-apple.com/2019/cert/061-41343-20191023-02465f92-3ab5-4c92-bfe2-b725447a070d/InstallMacOSX.dmg <br>
+
 *taken from the [HT211683](https://support.apple.com/en-us/HT211683) support page.*
 
 These images can be flashed using the `Custom OS Images` option.
