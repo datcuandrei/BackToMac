@@ -40,7 +40,6 @@ Special thanks go to [**dosdude1**](https://www.dosdude1.com/) and [**RMC Team**
 ### Original macOS Images
 By default, BackToMac automatically uses images that are patched to work on both supported and unsupported Macs. If, however, the user wants to use an original, untouched image of macOS, they can be easily downloaded using the link below:
 
-<br/>
 <b>macOS Catalina</b> : *through app store* <br>
 <b>macOS Mojave</b> : *through app store* <br>
 <b>macOS High Sierra</b> : *through app store* <br>
