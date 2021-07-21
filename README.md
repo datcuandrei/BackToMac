@@ -7,6 +7,7 @@ Table of Contents
 * [Features](#features)
     * [Graphical User Interface](#graphical-user-interface)
     * [Patchers](#patchers)
+    * [Original macOS Images](#original-macos-images)
     * [Custom OS Images](#custom-os-images)
 * [LICENSE](#license)
 * [Requirements](#requirements)
@@ -35,6 +36,22 @@ BackToMac was created with both supported and unsupported Macs in mind.After goi
 For users that have a supported Mac,their choice won't make a difference,since no patches will be applied to their system.
 
 Special thanks go to [**dosdude1**](https://www.dosdude1.com/) and [**RMC Team**](https://rmc-team.github.io).Without their contribution,this feature would not have been possible.
+
+### Original macOS Images
+By default, BackToMac automatically uses images that are patched to work on both supported and unsupported Macs. If, however, the user wants to use an original, untouched image of macOS, they can be easily downloaded using the link below:
+<br/>
+<b>macOS Catalina</b> : *through app store* <br>
+<b>macOS Mojave</b> : *through app store* <br>
+<b>macOS High Sierra</b> : *through app store* <br>
+<b>macOS Sierra</b> : http://updates-http.cdn-apple.com/2019/cert/061-39476-20191023-48f365f4-0015-4c41-9f44-39d3d2aca067/InstallOS.dmg <br>
+
+
+Not included with BackToMac, but can be flashed with ease : <br>
+<b>OS X El Capitan</b> : http://updates-http.cdn-apple.com/2019/cert/061-41424-20191024-218af9ec-cf50-4516-9011-228c78eda3d2/InstallMacOSX.dmg <br>
+<b>OS X Yosemite</b> : http://updates-http.cdn-apple.com/2019/cert/061-41343-20191023-02465f92-3ab5-4c92-bfe2-b725447a070d/InstallMacOSX.dmg <br>
+*taken from the [HT211683](https://support.apple.com/en-us/HT211683) support page.*
+
+These images can be flashed using the `Custom OS Images` option.
 
 ### Custom OS Images
 With the release of version 1.2.0,BackToMac supports flashing custom OS images.Users can now create USB sticks with their own image files.(thanks to @Minh-Ton for the idea.).
